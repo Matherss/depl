@@ -1,0 +1,32 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+  transition: 0s all;
+}
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 2s;
+}
+.modal__active {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: aquamarine;
+  min-width: 310px;
+  color: black;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  max-width: 900px;
+  min-height: 320px;
+  cursor: default;
+}
