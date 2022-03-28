@@ -37,7 +37,7 @@
 }
 .valuta .tooltiptext {
   visibility: hidden;
-  width: 300px;
+  width: 270px;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -65,4 +65,28 @@
 .valuta:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+@media screen and (max-width: 1441px) {
+  .valuta .tooltiptext {
+    visibility: hidden;
+    width: 270px;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -135px;
+  }
+  .valuta .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    left: 50%;
+    border-width: 0px 5px 5px 5px;
+    border-color: transparent transparent #555 transparent;
+    transform-origin: bottom;
+  }
 }
